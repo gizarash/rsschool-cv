@@ -14,3 +14,9 @@ HTML / CSS / Javascript / PHP / Laravel / MySQL / Git
 *2012 - present*    
 JSC Halyk Bank  
 Web Application Development. Support and customisation of softwate written with PHP, Javascript, Delphi, C#, PL/SQL
+## Education
+* Tashkent University of Information Technologies  
+Bachelor of Communications Engineering
+## Languages
+* Russian (Native)
+* English (Pre-Intermediate)
