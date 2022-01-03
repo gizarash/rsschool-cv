@@ -1,0 +1,100 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f5f5f5;
+  line-height: 1.5rem;
+}
+
+.wrapper {
+  width: 1080px;
+  margin: 0 auto;
+  padding: 40px 80px;
+  background-color: #ffffff;
+}
+
+main {
+  margin-bottom: 20px;
+  border-top: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
+}
+
+.left {
+  width: 20%;
+  float: left;
+}
+
+.right {
+  margin-left: 25%;
+}
+
+h1, h2, h3, h4, h5, h6 { 
+  margin: .5rem 0;
+  margin-bottom: 1rem;
+  /* font-weight: bold; */
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+address {
+  font-style: normal;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+.avatar img {
+  width: 200px;
+}
+
+.exp {
+  position: relative;
+}
+
+.exp .job-range {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #999999;
+  font-style: italic;
+}
+
+.company {
+  color: #999999;
+}
+
+.edu-place {
+  color: #999999;
+}
+
+.footer-blocks {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.footer-blocks a {
+  text-decoration: none;
+}
+
+.code {
+  margin-bottom: 10px;
+  border-left: 5px solid #999999;
+}
