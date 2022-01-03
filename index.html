@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="styles/styles.css">
+  <title>CV - Rashid Gizatullin</title>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="left">
+      <div class="avatar">
+        <img src="images/ava.jpg" alt="My photo">
+      </div>
+      <div>
+        <address>
+          <ul>
+            <li>Location: Almaty, Kazakhstan</li>
+            <li>Telegram: <a href="https://t.me/gizarash" target="_blank">@gizarash</a></li>
+            <li>Email: <a href="mailto:gizarash@gmail.com">gizarash@gmail.com</a></li>
+          </ul>
+        </address>
+      </div>
+    </div>
+    <div class="right">
+      <header>
+        <h1>Rashid Gizatullin</h1>
+        <h2>Web developer</h2>
+      </header>
+      <main>
+        <section>
+          <h3>Summary</h3>
+          <div>
+            <p>I want to try myself in the frontend development and learn Angular. In the future, I plan to become a fullstack developer (Angular + ASP.NET Core).</p>
+          </div>
+        </section>
+        <section>
+          <h3>Skills</h3>
+          <div>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Javascript</li>
+              <li>PHP</li>
+              <li>Laravel</li>
+              <li>MySQL</li>
+              <li>Git</li>
+            </ul>
+          </div>
+        </section>
+        <section>
+          <h3>Code examples</h3>
+          <pre class="code">
+        <code>
+        function duplicateEncode(word){
+            return word.toLowerCase().split('').map((val, index, arr) => {
+                return arr.indexOf(val) === arr.lastIndexOf(val) ? '(' : ')'
+            }).join('');
+        }</code></pre>
+          <pre class="code">
+        <code>
+        function findOdd(A) {
+            let sortedArr = A.sort();
+            let index = 0;
+            let resArr = [[sortedArr[index], 1]];
+            for(let i = 1; i &lt; sortedArr.length; i++) {
+                if(sortedArr[i] === sortedArr[i-1]) {
+                resArr[index][1]++;
+                } else {
+                if (resArr[index][1] % 2 === 1) return resArr[index][0];
+                
+                resArr.push([sortedArr[i],1]);
+                index++;
+                }
+            }
+            
+            return resArr[index][0];
+        }</code></pre>
+          <pre class="code">
+        <code>
+        function findOutlier(integers){
+            let res = 0;
+            for(let i = 0; i &lt; 3; i++) {
+                res += (Math.abs(integers[i]) % 2);
+            }
+            for(let j = 0; j &lt; integers.length; j++) {
+                if(res > 1 && integers[j] % 2 === 0) {
+                return integers[j];
+                } else if(res &lt;= 1 && integers[j] % 2 !== 0) {
+                return integers[j];
+                }
+            }
+        }</code></pre>
+          <pre class="code">
+        <code>
+        function fridayTheThirteenths(start, end) {
+            let result = [];
+            end = end ? end : start;
+            for(let year = start; year &lt;= end; year++) {
+                for(let month = 0; month &lt; 12; month++) {
+                let checkDate = new Date(year, month, 13);
+                if(checkDate.getDay() === 5) result.push(`${month+1}/13/${year}`);
+                }
+            }
+            
+            return result.join(' ');
+            }</code></pre>
+        </section>
+        <section>
+            <h3>Educational projects</h3>
+            <ul>
+              <li><a href="https://github.com/gizarash/6737-barbershop">Barbershop</a></li>
+              <li><a href="https://github.com/gizarash/6737-sedona">Sedona</a></li>
+            </ul>
+          </section>
+        <section>
+          <h3>Experience</h3>
+          <div class="exp">
+            <h4 class="company">JSC Halyk Bank</h4>
+            <div class="job-range">2012 - present</div>
+            <p>Web Application Development. Support and customisation of softwate written with Delphi, C#, PL/SQL</p>
+          </div>
+        </section>
+        <section>
+          <h3>Education</h3>
+          <div>
+            <ul>
+              <li>Bachelor of Communications Engineering <br>
+                <span class="edu-place">Tashkent University of Information Technologies</span>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section>
+          <h3>Languages</h3>
+          <div>
+            <ul>
+              <li>Russian (Native)</li>
+              <li>English (Pre-Intermediate)</li>
+            </ul>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <div class="footer-blocks">
+          &copy; 2022 Rashid Gizatullin 
+        </div>
+        <div class="footer-blocks">
+          <a class="footer-link" href="https://github.com/gizarash"><img src="images/github.svg" height="25" alt="github-logo"></a>
+        </div>
+        <div class="footer-blocks">
+          <a class="footer-link" href="https://rs.school/js/"><img src="images/rs_school_js.svg" height="25" alt="rs-school-logo"></a>
+        </div>
+      </footer>
+    </div>
+    
+  </div>
+</body>
+</html>
