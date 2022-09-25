@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous">
   <link rel="stylesheet" href="styles/styles.css">
   <title>CV - Rashid Gizatullin</title>
 </head>
@@ -57,7 +57,7 @@
           <pre class="code">
         <code>
         function duplicateEncode(word){
-            return word.toLowerCase().split('').map((val, index, arr) => {
+            return word.toLowerCase().split('').map((val, index, arr) =&gt; {
                 return arr.indexOf(val) === arr.lastIndexOf(val) ? '(' : ')'
             }).join('');
         }</code></pre>
@@ -72,12 +72,10 @@
                 resArr[index][1]++;
                 } else {
                 if (resArr[index][1] % 2 === 1) return resArr[index][0];
-                
                 resArr.push([sortedArr[i],1]);
                 index++;
                 }
             }
-            
             return resArr[index][0];
         }</code></pre>
           <pre class="code">
@@ -88,9 +86,9 @@
                 res += (Math.abs(integers[i]) % 2);
             }
             for(let j = 0; j &lt; integers.length; j++) {
-                if(res > 1 && integers[j] % 2 === 0) {
+                if(res &gt; 1 &amp;&amp; integers[j] % 2 === 0) {
                 return integers[j];
-                } else if(res &lt;= 1 && integers[j] % 2 !== 0) {
+                } else if(res &lt;= 1 &amp;&amp; integers[j] % 2 !== 0) {
                 return integers[j];
                 }
             }
@@ -106,7 +104,6 @@
                 if(checkDate.getDay() === 5) result.push(`${month+1}/13/${year}`);
                 }
             }
-            
             return result.join(' ');
             }</code></pre>
         </section>
@@ -147,7 +144,7 @@
       </main>
       <footer>
         <div class="footer-blocks">
-          &copy; 2022 Rashid Gizatullin 
+          &copy; 2022 Rashid Gizatullin
         </div>
         <div class="footer-blocks">
           <a class="footer-link" href="https://github.com/gizarash"><img src="images/github.svg" height="25" alt="github-logo"></a>
